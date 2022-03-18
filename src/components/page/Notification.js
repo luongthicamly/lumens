@@ -1,10 +1,9 @@
 import React from 'react';
+import BlockFood from '../includes/BlockFood';
 
 function Notification(props) {
     return (
-        <div>
-
-        </div>
+        <BlockFood/>
     );
 }
 

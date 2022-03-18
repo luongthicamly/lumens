@@ -19,6 +19,7 @@ function Banner(props) {
                     <p>You have paid rental fee for $1,200.<br /> Pay more $800 to achieve Gold Tier.</p>
                     <button className="btn-benefits">View tier benefits <img src={ChevronRight} alt="icon" /></button>
                     <button className="btn-my-coupons">My Coupons</button>
+                    <p className='text-center text-update'>Updated: 02/11/2021</p>
                 </div>
             </div>
         </div >

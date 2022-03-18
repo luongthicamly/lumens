@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './scss/navigationBar.scss';
 import HomeIcon from "../../asset/images/home.png";
@@ -12,7 +12,8 @@ import NoticeIconActive from "../../asset/images/notice-active.png";
 
 function NavigationBar(props) {
     const path = useLocation();
-    const splitPath = path.pathname.split("/")[1]
+    const splitPath = path.pathname.split("/")[1];
+    const [noti, setNoti] = useState(true);
     return (
         <div className="navigation-bar">
             <ul>
@@ -24,9 +25,9 @@ function NavigationBar(props) {
                     </NavLink>
                 </li>
                 <li className={splitPath == "notification" ? "active" : ""}>
-                    <NavLink to="/notification" >
+                    <NavLink to="/notification" className={noti == true && 'noti'}>
                         {
-                            splitPath == "notification" ? <img src={NoticeIconActive} alt="" /> : <img src={NoticeIcon} alt="" />
+                            splitPath == "notification" ? <img  src={NoticeIconActive} alt="" /> : <img src={NoticeIcon} alt="" />
                         }
                     </NavLink>
                 </li>

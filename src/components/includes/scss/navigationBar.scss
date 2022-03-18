@@ -27,6 +27,21 @@
                     background-color: #0062ff;
                 }
             }
+            a{
+                position: relative;
+                &.noti{
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: -20px;
+                        left: 20px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #FC5A5A;
+                    }
+                }
+            }
         }
     }
 }

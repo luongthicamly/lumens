@@ -24,15 +24,21 @@
         line-height: 24px;
         color: #B5B5BE;
         font-family: Regular;
+        letter-spacing: -0.005em;
     }
     .coupons{
-        background-color: #fff;
         padding: 15px;
         border-radius: 15px;
         position: absolute;
         left: 15px;
         top: 120%;
         width: calc(100% - 60px);
+        box-shadow: 0px 12px 18px rgba(23, 23, 37, 0.04);
+        border-radius: 8px;
+        background: #fff url('../../../asset/images/bg-coupons.png');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
         .title-coupons{
             font-family: Semibold;
             margin-bottom: 0;
@@ -91,6 +97,8 @@
             text-align: center;
             margin-top: 24px;
         }
-        
+       .text-update{
+           margin-top: 15px;
+       }
     }
 }
